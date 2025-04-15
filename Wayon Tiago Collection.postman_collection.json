@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "4e5a188d-406a-4eff-8332-3926e9e63858",
+		"name": "Wayon Tiago Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "44034540",
+		"_collection_link": "https://tiago-1033766.postman.co/workspace/Tiago's-Workspace~a62cd7b9-cf53-4f6a-8117-1beb8a4e123f/collection/44034540-4e5a188d-406a-4eff-8332-3926e9e63858?action=share&source=collection_link&creator=44034540"
+	},
+	"item": [
+		{
+			"name": "Anagrama",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"input\": \"ABC\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/teste"
+			},
+			"response": []
+		},
+		{
+			"name": "Anagrama NotFoundException",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"input\": null\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/teste"
+			},
+			"response": []
+		},
+		{
+			"name": "Anagrama CharacterException",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"input\": \"a\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/teste"
+			},
+			"response": []
+		},
+		{
+			"name": "Anagrama EmptyException",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"input\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/teste"
+			},
+			"response": []
+		},
+		{
+			"name": "Anagrama NumericException",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"input\": \"a1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/teste"
+			},
+			"response": []
+		}
+	]
+}
